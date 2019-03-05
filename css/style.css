@@ -2,9 +2,6 @@ div {
   display: block;
 }
 
-.rules {
-  background-color: navy;
-}
 .enjoy {
   font-size: 100px;
   font-style: italic;
@@ -32,4 +29,7 @@ body {
   float: right;
   background-color: pink;
   width: 50%
+}
+.rules {
+  background-color: navy;
 }
