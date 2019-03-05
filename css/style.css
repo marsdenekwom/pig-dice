@@ -1,0 +1,16 @@
+div {
+  display: block;
+}
+.player-1 {
+  float: left;
+  background-color: blue;
+  width: 50%;
+}
+.player-2 {
+  float: right;
+  background-color: pink;
+  width: 50%
+}
+body {
+  background-image: url("../images/download.jpeg")
+}
