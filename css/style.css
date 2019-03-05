@@ -11,9 +11,7 @@ div {
   background-color: pink;
   width: 50%
 }
-body {
-  background-image: url("../images/download.jpeg")
-}
+
 .rules {
   background-color: navy;
 }
@@ -31,4 +29,7 @@ button {
     border: none;
     font-size: 20px;
     text-transform: uppercase;
+}
+body {
+  background-image: url("../images/download.jpeg")
 }
