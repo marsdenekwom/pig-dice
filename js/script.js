@@ -42,13 +42,13 @@ $(document).ready(function() {
    var roll2 = Math.floor(Math.random() * 6 + 1);
    turnScore2 += button-roll;
    document.getElementById('dicetwo').innerHTML = roll2;
-   document.getElementById('totalscore').innerHTML = totalScore;
+   document.getElementById('totalscore2').innerHTML = totalScore2;
    if (roll2 == 1) {
      player2=[];
      $("#button-roll").show();
      $("#holdButton").show();
      totalScore = 0;
-     document.getElementById('totalscore').innerHTML = totalScore;
+     document.getElementById('totalscore2').innerHTML = totalScore2;
 
    } else {
        totalScore += button-roll;
