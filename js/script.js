@@ -29,26 +29,24 @@ $(document).ready(function() {
        playerOne.push(roll);
    }
  });
- $("#hold").click(function() {
-   $("#roll").hide();
-   $("#hold").hide();
-   $("#roll2").show();
-   $("#hold2").show();
+ $("#holdButton").click(function() {
+   $("#button-roll").hide();
+   $("#holdButton").hide();
    playerOne.forEach(function(playerone) {
      return score+= playerone;
    });
    document.getElementById('score').innerHTML = score;
    playerOne = [];
    turnScore = 0;
-   document.getElementById('turnscore').innerHTML = turnScore;
+   document.getElementById('totalscore').innerHTML = totalScore;
  });
- $("#roll2").click(function() {
+ $("#button-roll").click(function() {
    var roll2 = Math.floor(Math.random() * 6 + 1);
-   turnScore2 += roll2;
+   turnScore2 += button-roll;
    document.getElementById('dicetwo').innerHTML = roll2;
-   document.getElementById('turnscore2').innerHTML = turnScore2;
+   document.getElementById('totalscore').innerHTML = totalScore;
    if (roll2 == 1) {
-     playerTwo=[];
+     player2=[];
      $("#roll").show();
      $("#hold").show();
      $("#roll2").hide();

@@ -15,5 +15,10 @@ body {
   background-image: url("../images/download.jpeg")
 }
 .rules {
-  background-color: black;
+  background-color: navy;
+}
+.enjoy {
+  font-size: 100px;
+  font-style: italic;
+  text-align: center;
 }
