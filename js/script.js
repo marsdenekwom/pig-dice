@@ -1,7 +1,7 @@
 var totalScore = 0;
 var totalScore2 = 0;
 var player1 = [];
-var playerTwo = [];
+var player2 = [];
 var score = 0;
 var score2 = 0;
 
@@ -14,13 +14,11 @@ $(document).ready(function() {
    var roll = Math.floor(Math.random() * 6 + 1);
    turnScore += roll;
    document.getElementById('dice').innerHTML = roll;
-   document.getElementById('turnscore').innerHTML = turnScore;
+   document.getElementById('totalscore').innerHTML = totalScore;
    if (roll == 1) {
      playerOne=[];
      $("#button-roll").hide();
      $("#holdButton").hide();
-     $("#roll2").show();
-     $("#hold2").show();
      turnScore = 0;
      document.getElementById('turnscore').innerHTML = totalScore;
 
@@ -47,29 +45,25 @@ $(document).ready(function() {
    document.getElementById('totalscore').innerHTML = totalScore;
    if (roll2 == 1) {
      player2=[];
-     $("#roll").show();
-     $("#hold").show();
-     $("#roll2").hide();
-     $("#hold2").hide();
-     turnScore2 = 0;
-     document.getElementById('turnscore2').innerHTML = turnScore2;
+     $("#button-roll").show();
+     $("#holdButton").show();
+     totalScore = 0;
+     document.getElementById('totalscore').innerHTML = totalScore;
 
    } else {
-       turnScore2 += roll2;
-       playerTwo.push(roll2);
+       totalScore += button-roll;
+       player2.push(button-roll);
    }
  });
- $("#hold2").click(function() {
- $("#roll").show();
- $("#hold").show();
- $("#roll2").hide();
- $("#hold2").hide();
-   playerTwo.forEach(function(playertwo) {
-     return score2+= playertwo;
+ $("#holdButton").click(function() {
+ $("#button-roll").show();
+ $("#holdButton").show();
+   player2.forEach(function(player2) {
+     return score2+= player2;
    });
    document.getElementById('scoretwo').innerHTML = score2;
    playerTwo = [];
    turnScore2 = 0;
-   document.getElementById('turnscore2').innerHTML = turnScore2;
+   document.getElementById('totalscore2').innerHTML = totalScore2;
  });
 });
