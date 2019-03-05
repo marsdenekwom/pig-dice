@@ -17,8 +17,8 @@ Each turn, a player repeatedly rolls a die until either a 1 is rolled or the pla
 ## BEHAVIOUR DRIVEN DEVELOPMENT
 ## GENERAL BEHAVIOUR	INPUT	OUTPUT
 IF you want to roll a dice	click roll button	number values appear
-If you roll a dice and score a 1	click the roll button	An error message
-if the your total score is more than a 100 you win
+If you roll a dice and score a 1	click the roll button	An error message will appear
+if the your total score is more than a 100 you are declared winner
 ## KNOWN BUGS
 There are no known bugs yet.
 
